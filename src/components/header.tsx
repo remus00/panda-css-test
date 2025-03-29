@@ -12,29 +12,36 @@ export const Header = () => {
         <header
             className={css({
                 w: 'full',
-                maxW: '1920px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
                 position: 'fixed',
                 padding: '32px 16px',
                 zIndex: '999',
                 top: 0,
                 backdropFilter: 'auto',
                 backdropBlur: 'md',
+                color: 'white',
             })}
         >
-            <Logo />
+            <div
+                className={css({
+                    maxW: '1920px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    marginX: 'auto',
+                })}
+            >
+                <Logo />
 
-            <nav className={css({ display: 'flex', alignItems: 'center', gap: '40px' })}>
-                <p className={navStyle}>Equipment</p>
-                <p className={navStyle}>About us</p>
-                <p className={navStyle}>Blog</p>
-            </nav>
+                <nav className={css({ display: 'flex', alignItems: 'center', gap: '40px' })}>
+                    <p className={navStyle}>Equipment</p>
+                    <p className={navStyle}>About us</p>
+                    <p className={navStyle}>Blog</p>
+                </nav>
 
-            <div className={css({ display: 'flex', alignItems: 'center', gap: '8px' })}>
-                <img src={UserIcon} alt="user icon" />
-                <p className={navStyle}>Account</p>
+                <div className={css({ display: 'flex', alignItems: 'center', gap: '8px' })}>
+                    <img src={UserIcon} alt="user icon" />
+                    <p className={navStyle}>Account</p>
+                </div>
             </div>
         </header>
     );

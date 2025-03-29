@@ -8,11 +8,11 @@ import './index.css';
 
 const App = () => {
     return (
-        <div className={css({ bg: '#0B1D26' })}>
+        <div className={css({ bg: '#0B1D26', pos: 'relative' })}>
+            <Header />
             <div
                 className={`gilroy ${css({ maxW: '1920px', w: 'full', margin: 'auto', pos: 'relative', zIndex: 0, color: 'white', paddingInline: '16px' })}`}
             >
-                <Header />
                 <Hero />
                 <div className={css({ display: 'flex', flexDir: 'column', gap: '200px' })}>
                     {sectionsData.map(
