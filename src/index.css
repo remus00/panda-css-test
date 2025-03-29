@@ -1,0 +1,35 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@layer reset {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        background-color: #0b1d26;
+    }
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('./assets/fonts/chronicle/Chronicle_Display_Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/gilroy/Gilroy_Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.chronicle {
+    font-family: 'Chronicle', sans-serif;
+}
+
+.gilroy {
+    font-family: 'Gilroy', sans-serif;
+}
